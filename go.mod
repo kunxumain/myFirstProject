@@ -1,4 +1,4 @@
-module git.mashibing.com/msb_246324/shopping-comm
+module github.com/kunxumain/myFirstProject
 
 go 1.24.0
 
