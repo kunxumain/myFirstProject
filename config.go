@@ -14,6 +14,21 @@ import (
 	"gorm.io/gorm/logger"
 )
 
+// DTM服务地址
+const (
+	ConsulIP  = "192.168.71.200"
+	consulStr = "http://192.168.71.200:8500"
+	consulReistStr="192.168.71.200:8500"
+	DTMServer="http://192.168.71.200:36789/api/dtmsvr"
+	QSIP="192.168.71.1"
+	QSBusi="http://192.168.71.1:6669"//注意本机IP
+	productFileKey="mysql-product"
+	tradeFileKey="mysql-trade"
+	userFileKey="mysql-user"
+	redisFileKey="redis"
+	QPS=100
+)
+
 func GetConsulConfig(url string, fileKey string) (*viper.Viper, error) {
 	conf := viper.New()
 	conf.AddRemoteProvider("consul", url, fileKey)
