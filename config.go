@@ -23,10 +23,10 @@ const (
 	DTMServer      = "http://192.168.71.200:36789/api/dtmsvr"
 	QSIP           = "192.168.71.1"
 	QSBusi         = "http://192.168.71.1:6669" //注意本机IP
-	productFileKey = "mysql-product"
-	tradeFileKey   = "mysql-trade"
-	userFileKey    = "mysql-user"
-	redisFileKey   = "redis"
+	ProductFileKey = "mysql-product"
+	TradeFileKey   = "mysql-trade"
+	UserFileKey    = "mysql-user"
+	RedisFileKey   = "redis"
 	QPS            = 100
 )
 
